@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="scraper" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="scraper" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="overwatch_skills" project-jdk-type="Python SDK" />
 </project>
