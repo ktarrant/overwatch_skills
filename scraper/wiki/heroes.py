@@ -34,6 +34,71 @@ def get_heroes_list():
         print("Failed to retrieve the page.")
 
 
+def parse_ability_summary(soup):
+    ability = {}
+
+    image_div, summary_div = soup.find_all("div", recursive=False)
+    icon_div = image_div.find("div", {"class": "abilityImage"}).find("div", {"class": "center"})
+    image_url = icon_div.find("img")["data-src"]
+    ability["image_url"] = image_url
+
+    summary_table, summary_text = summary_div.find_all("div", recursive=False)
+    for row in summary_table:
+        key_name = row.find("b", recursive=False)
+        if key_name:
+            key_name = key_name.text.strip()
+            effect_entries = row.div.find_all("a")
+            if effect_entries:
+                ability[key_name] = [entry["title"] for entry in effect_entries]
+            else:
+                ability[key_name] = row.div.text.strip()
+
+        else:
+            # This is probably the affected abilities icon row
+            affect_icons = row.find_all("div", {"class": "abilityImage"})
+            if affect_icons:
+                affects = [icon.find("img")["title"] for icon in affect_icons]
+                ability["affects"] = affects
+
+    ability["summary"] = summary_text.text.strip()
+
+    return ability
+
+
+def parse_ability_box(soup):
+    ability_sections = soup.find_all("div", recursive=False)
+    if len(ability_sections) != 3:
+        return None
+
+    ability_header, ability_summary, ability_misc = ability_sections
+
+    # Get the ability name (commonly in an h3 or similar heading tag)
+    if "abilityHeader" not in ability_header["class"]:
+        return None
+
+    ability_name, ability_control = ability_header.contents
+
+    if "summaryInfoAndImage" not in ability_summary["class"]:
+        return None
+    ability = parse_ability_summary(ability_summary)
+
+    ability["name"] = ability_name.text.strip()
+
+    ability_control_img = ability_control.find("img")
+    if ability_control_img:
+        ability["keybind"] = ability_control_img["alt"]
+
+    for misc_row in ability_misc.find_all("div", recursive=False):
+        misc_cols = misc_row.find_all("div", recursive=False)
+        if len(misc_cols) != 2:
+            continue
+        key = misc_cols[0].text.strip().rstrip(":")
+        value = misc_cols[1].text.strip()
+        ability[key] = value
+
+    return ability
+
+
 def get_hero_abilities(hero_url):
     # Send a request to the hero's page
     response = requests.get(hero_url)
@@ -44,40 +109,9 @@ def get_hero_abilities(hero_url):
     # Parse the HTML content
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Find the Abilities section - typically an HTML element with a specific header or class
-    abilities_section = soup.find("span", {"id": "Abilities"})
-    if not abilities_section:
-        print("Abilities section not found.")
-        return None
-
-    # Move to the parent element to access the list of abilities
-    abilities_cur = abilities_section.find_parent("h2").find_next_sibling("div")
-
-    # Extract each ability and description
-    abilities = []
-    while abilities_cur.name != "h2":
-        if abilities_cur.name == "div":
-            # Get the ability name (commonly in an h3 or similar heading tag)
-            ability_header = abilities_cur.find("div", {"class": "abilityHeader"})
-            if not ability_header:
-                continue
-
-            ability_name, ability_control = ability_header.contents
-
-            ability_control_img = ability_control.find("img")
-            if ability_control_img:
-                control = ability_control_img["alt"]
-            else:
-                control = ability_control.text.strip()
-
-            # Add the ability to the list
-            abilities.append({
-                "name": ability_name.text.strip(),
-                "control": control
-            })
-
-        abilities_cur = abilities_cur.next_sibling
-
+    ability_boxes = soup.find_all("div", {"class": "ability_box"})
+    abilities = [parse_ability_box(box) for box in ability_boxes]
+    abilities = [ability for ability in abilities if ability]
     return abilities
 
 
@@ -89,8 +123,8 @@ if __name__ == "__main__":
 
     if abilities:
         for ability in abilities:
-            print(f"Ability: {ability['name']}")
-            print(f"Control: {ability['control']}")
+            for key, value in ability.items():
+                print(f"{key.title()}: {value}")
             print("-" * 30)
 
     # for hero_name, hero_link in get_heroes_list():
