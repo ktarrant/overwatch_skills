@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95821c88-b37b-4bbc-b451-43418e2a501e" name="Changes" comment="add heroes wiki page scraper">
-      <change afterPath="$PROJECT_DIR$/rankings/heroes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rankings/maps.json" afterDir="false" />
+    <list default="true" id="95821c88-b37b-4bbc-b451-43418e2a501e" name="Changes" comment="workspace update">
+      <change afterPath="$PROJECT_DIR$/matchups.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abilities_scraper.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/abilities_scraper.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/wiki/heroes.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/wiki/heroes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -75,7 +73,7 @@
       <workItem from="1730956864801" duration="3400000" />
       <workItem from="1730962529213" duration="5192000" />
       <workItem from="1731304220424" duration="23000" />
-      <workItem from="1732519268357" duration="911000" />
+      <workItem from="1732519268357" duration="3238000" />
     </task>
     <task id="LOCAL-00001" summary="add better setup instructions and environment yml">
       <option name="closed" value="true" />
@@ -101,7 +99,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730960490621</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add chatgpt rankings">
+      <option name="closed" value="true" />
+      <created>1732520551808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732520551808</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updates to abilities scraper">
+      <option name="closed" value="true" />
+      <created>1732520579321</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732520579321</updated>
+    </task>
+    <task id="LOCAL-00006" summary="workspace update">
+      <option name="closed" value="true" />
+      <created>1732520584568</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732520584568</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +133,10 @@
     <MESSAGE value="add better setup instructions and environment yml" />
     <MESSAGE value="parse ability headers" />
     <MESSAGE value="add heroes wiki page scraper" />
-    <option name="LAST_COMMIT_MESSAGE" value="add heroes wiki page scraper" />
+    <MESSAGE value="add chatgpt rankings" />
+    <MESSAGE value="updates to abilities scraper" />
+    <MESSAGE value="workspace update" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/overwatch_skills$heroes.coverage" NAME="heroes Coverage Results" MODIFIED="1730968542727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper/wiki" />

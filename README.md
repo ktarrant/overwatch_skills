@@ -21,7 +21,9 @@ This data is used to determine the strength and weaknesses
 of each character.
 
 # Proof of Concept Idea
-Characters are given a 1-10 ranking in the following categories:
+
+## Character and Map Scores
+Characters are given a 1-10 score in the following categories:
 - Mobility: Characters with abilties that allow them to move faster
 or take high ground have high Mobility score.
 - Power: Characters with high damage output or high healing output per
@@ -31,9 +33,16 @@ can create unique opportunities in fights have high Utility score.
 - Range: Characters that can effectively attack and support from a
 distance have high Range score.
 
-For Maps, rankings for Mobility, Utility, and Range are created.
+For Maps, scores for Mobility, Utility, and Range are created.
 
 For the purposes of a test, I asked ChatGPT to make these rankings.
+
+### Matchup Score
+When computing a matchup between characters, the difference between
+scores in each category are calculated and squared (preserving sign).
+This way, large score differences are emphasized, since they indicate
+a clear advantage in a single category, which can be enough to counter
+a character.
 
 # Setup
 
