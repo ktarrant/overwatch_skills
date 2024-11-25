@@ -1,0 +1,46 @@
+{
+  "Tank": [
+    { "Hero": "D.Va", "Mobility": 9, "Power": 7, "Utility": 6, "Range": 5 },
+    { "Hero": "Doomfist", "Mobility": 10, "Power": 6, "Utility": 7, "Range": 3 },
+    { "Hero": "Junker Queen", "Mobility": 6, "Power": 8, "Utility": 6, "Range": 4 },
+    { "Hero": "Orisa", "Mobility": 4, "Power": 7, "Utility": 7, "Range": 6 },
+    { "Hero": "Ramattra", "Mobility": 5, "Power": 8, "Utility": 7, "Range": 5 },
+    { "Hero": "Reinhardt", "Mobility": 4, "Power": 8, "Utility": 6, "Range": 2 },
+    { "Hero": "Roadhog", "Mobility": 3, "Power": 8, "Utility": 5, "Range": 3 },
+    { "Hero": "Sigma", "Mobility": 5, "Power": 7, "Utility": 8, "Range": 7 },
+    { "Hero": "Winston", "Mobility": 9, "Power": 6, "Utility": 7, "Range": 5 },
+    { "Hero": "Wrecking Ball", "Mobility": 10, "Power": 6, "Utility": 8, "Range": 4 },
+    { "Hero": "Zarya", "Mobility": 4, "Power": 8, "Utility": 6, "Range": 4 }
+  ],
+  "Damage": [
+    { "Hero": "Ashe", "Mobility": 6, "Power": 8, "Utility": 5, "Range": 8 },
+    { "Hero": "Bastion", "Mobility": 3, "Power": 9, "Utility": 5, "Range": 7 },
+    { "Hero": "Cassidy", "Mobility": 4, "Power": 8, "Utility": 4, "Range": 6 },
+    { "Hero": "Echo", "Mobility": 9, "Power": 8, "Utility": 7, "Range": 8 },
+    { "Hero": "Genji", "Mobility": 10, "Power": 7, "Utility": 6, "Range": 5 },
+    { "Hero": "Hanzo", "Mobility": 6, "Power": 8, "Utility": 6, "Range": 9 },
+    { "Hero": "Junkrat", "Mobility": 5, "Power": 8, "Utility": 6, "Range": 7 },
+    { "Hero": "Mei", "Mobility": 4, "Power": 7, "Utility": 8, "Range": 6 },
+    { "Hero": "Pharah", "Mobility": 9, "Power": 7, "Utility": 5, "Range": 8 },
+    { "Hero": "Reaper", "Mobility": 5, "Power": 8, "Utility": 5, "Range": 4 },
+    { "Hero": "Sojourn", "Mobility": 7, "Power": 8, "Utility": 5, "Range": 8 },
+    { "Hero": "Soldier: 76", "Mobility": 7, "Power": 7, "Utility": 4, "Range": 7 },
+    { "Hero": "Sombra", "Mobility": 10, "Power": 6, "Utility": 9, "Range": 4 },
+    { "Hero": "Symmetra", "Mobility": 4, "Power": 7, "Utility": 8, "Range": 5 },
+    { "Hero": "Torbjörn", "Mobility": 3, "Power": 7, "Utility": 7, "Range": 6 },
+    { "Hero": "Tracer", "Mobility": 10, "Power": 6, "Utility": 7, "Range": 4 },
+    { "Hero": "Widowmaker", "Mobility": 3, "Power": 7, "Utility": 5, "Range": 10 }
+  ],
+  "Support": [
+    { "Hero": "Ana", "Mobility": 3, "Power": 8, "Utility": 9, "Range": 10 },
+    { "Hero": "Baptiste", "Mobility": 7, "Power": 7, "Utility": 8, "Range": 8 },
+    { "Hero": "Brigitte", "Mobility": 4, "Power": 7, "Utility": 7, "Range": 4 },
+    { "Hero": "Illari", "Mobility": 6, "Power": 8, "Utility": 6, "Range": 8 },
+    { "Hero": "Kiriko", "Mobility": 9, "Power": 7, "Utility": 8, "Range": 9 },
+    { "Hero": "Lifeweaver", "Mobility": 5, "Power": 6, "Utility": 10, "Range": 7 },
+    { "Hero": "Lucio", "Mobility": 10, "Power": 6, "Utility": 8, "Range": 4 },
+    { "Hero": "Mercy", "Mobility": 10, "Power": 6, "Utility": 9, "Range": 8 },
+    { "Hero": "Moira", "Mobility": 7, "Power": 7, "Utility": 5, "Range": 5 },
+    { "Hero": "Zenyatta", "Mobility": 3, "Power": 8, "Utility": 7, "Range": 9 }
+  ]
+}

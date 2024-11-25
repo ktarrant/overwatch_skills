@@ -1,0 +1,166 @@
+{
+  "Maps": [
+    {
+      "Map": "Busan",
+      "Mobility": 8,
+      "Utility": 9,
+      "Range": 7
+    },
+    {
+      "Map": "Colosseo",
+      "Mobility": 6,
+      "Utility": 7,
+      "Range": 8
+    },
+    {
+      "Map": "Circuit Royal",
+      "Mobility": 5,
+      "Utility": 6,
+      "Range": 10
+    },
+    {
+      "Map": "Dorado",
+      "Mobility": 7,
+      "Utility": 8,
+      "Range": 9
+    },
+    {
+      "Map": "Eichenwalde",
+      "Mobility": 7,
+      "Utility": 8,
+      "Range": 7
+    },
+    {
+      "Map": "Havana",
+      "Mobility": 6,
+      "Utility": 6,
+      "Range": 9
+    },
+    {
+      "Map": "Hollywood",
+      "Mobility": 7,
+      "Utility": 7,
+      "Range": 8
+    },
+    {
+      "Map": "Ilios",
+      "Mobility": 9,
+      "Utility": 10,
+      "Range": 6
+    },
+    {
+      "Map": "Junkertown",
+      "Mobility": 6,
+      "Utility": 7,
+      "Range": 10
+    },
+    {
+      "Map": "King's Row",
+      "Mobility": 7,
+      "Utility": 8,
+      "Range": 7
+    },
+    {
+      "Map": "Lijiang Tower",
+      "Mobility": 9,
+      "Utility": 9,
+      "Range": 6
+    },
+    {
+      "Map": "New Junk City",
+      "Mobility": 7,
+      "Utility": 8,
+      "Range": 7
+    },
+    {
+      "Map": "Numbani",
+      "Mobility": 8,
+      "Utility": 7,
+      "Range": 8
+    },
+    {
+      "Map": "Oasis",
+      "Mobility": 9,
+      "Utility": 9,
+      "Range": 6
+    },
+    {
+      "Map": "Paraiso",
+      "Mobility": 7,
+      "Utility": 8,
+      "Range": 8
+    },
+    {
+      "Map": "Rialto",
+      "Mobility": 7,
+      "Utility": 9,
+      "Range": 9
+    },
+    {
+      "Map": "Route 66",
+      "Mobility": 6,
+      "Utility": 7,
+      "Range": 9
+    },
+    {
+      "Map": "Shambali Monastery",
+      "Mobility": 7,
+      "Utility": 8,
+      "Range": 8
+    },
+    {
+      "Map": "Watchpoint: Gibraltar",
+      "Mobility": 8,
+      "Utility": 8,
+      "Range": 10
+    },
+    {
+      "Map": "Coliseum",
+      "Mobility": 6,
+      "Utility": 7,
+      "Range": 8
+    },
+    {
+      "Map": "Esperança",
+      "Mobility": 7,
+      "Utility": 7,
+      "Range": 8
+    },
+    {
+      "Map": "Antarctic Peninsula",
+      "Mobility": 8,
+      "Utility": 8,
+      "Range": 7
+    },
+    {
+      "Map": "Blizzard World",
+      "Mobility": 7,
+      "Utility": 7,
+      "Range": 8
+    },
+    {
+      "Map": "Numbani",
+      "Mobility": 8,
+      "Utility": 7,
+      "Range": 8
+    },
+    {
+      "Map": "Horizon Lunar Colony",
+      "Mobility": 8,
+      "Utility": 9,
+      "Range": 6
+    },
+    {
+      "Map": "Temple of Anubis",
+      "Mobility": 8,
+      "Utility": 9,
+      "Range": 7
+    },
+    {
+      "Map": "Volskaya Industries",
+      "Mobility": 7,
+      "Utility": 8,
+      "Range": 7
+    }
+  ]
+}

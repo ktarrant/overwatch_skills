@@ -20,6 +20,21 @@ Data on abilities is collected via a BeautifulSoup scraper.
 This data is used to determine the strength and weaknesses
 of each character.
 
+# Proof of Concept Idea
+Characters are given a 1-10 ranking in the following categories:
+- Mobility: Characters with abilties that allow them to move faster
+or take high ground have high Mobility score.
+- Power: Characters with high damage output or high healing output per
+second have high Power score.
+- Utility: Characters with abilities with special effects that
+can create unique opportunities in fights have high Utility score. 
+- Range: Characters that can effectively attack and support from a
+distance have high Range score.
+
+For Maps, rankings for Mobility, Utility, and Range are created.
+
+For the purposes of a test, I asked ChatGPT to make these rankings.
+
 # Setup
 
 ## Python Setup
